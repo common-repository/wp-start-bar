@@ -1,0 +1,30 @@
+.startform fieldset{
+border:1px solid silver;
+padding:0 20px 20px 20px;
+display:block;
+margin-right:30px;
+}
+
+.startform legend{
+font:bold 14px arial;
+border:1px solid silver;
+padding:5px 10px;
+background:#eee;
+}
+
+.startform i{
+display:block;
+font:italic 18px georgia;
+margin:20px 0 10px 0;
+}
+
+.wp_startbar_aicon{
+border:0;
+width:32px;
+height:32px;
+}
+
+.start-table th{
+font:bold 16px arial;
+}
+

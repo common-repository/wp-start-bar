@@ -1,0 +1,485 @@
+body{
+background-color:silver;
+margin:0;
+padding:0;
+}
+
+.container{
+margin:40px auto;
+border:1px solid gray;
+min-height:600px;
+background-color:#fff;
+width:940px;
+}
+
+.sc-taskbar .menu{
+margin:0;
+padding:0;
+}
+
+.menu, .menu ul{
+display:none;
+margin:0;
+padding:0;
+}
+
+.sc-taskbar .menu li{
+display:inline;
+list-style:none;
+}
+
+.sc-taskbar .menu li a{
+color:#000;
+background-color:#eee;
+font:bold 16px arial;
+text-transform:uppercase;
+text-decoration:none;
+display:block;
+float:left;
+}
+
+.sc-taskbar{
+position:fixed;
+bottom:0;
+left:0;
+right:0;
+height:30px;
+background:url('../images/bg.png');
+z-index:999999;
+}
+
+.start-menu{
+bottom:30px;
+left:0;
+width:380px;
+height:520px;
+background:#003e75 url('../images/top_bg.png') center top repeat-x;
+position:fixed;
+border-right:1px solid #0e77b5;
+text-transform:capitalize;
+display:none;
+}
+
+.start-menu h2{
+float:left;
+color:#fff;
+font:24px tahoma;
+margin:20px 0 20px 20px;
+}
+
+.start-user{
+margin:5px;
+}
+
+.start-uimg{
+border:1px solid #0e77b5;
+padding:5px;
+width:64px;
+height:64px;
+background-color:#36a1db;
+float:left;
+}
+
+.start-uimg img{
+width:100%;
+height:100%;
+background-color:#fff;
+}
+
+.start-left, .start-right{
+background-color: #FFFFFF;
+margin: 0;
+padding: 0;
+width: 188px;
+float:left;
+border:1px solid #00578c;
+height:390px;
+overflow-x:hidden;
+overflow-y:auto;
+}
+
+.start-right{
+background-color:#00578c;
+}
+
+.start-left li{
+list-style:none;
+padding:5px;
+min-height:48px;
+}
+
+.start-right li{
+list-style:none;
+padding:2px;
+min-height:32px;
+}
+
+.start-right li img{
+border:0;
+float:left;
+margin-right:10px;
+width:32px;
+}
+
+.start-left li img{
+border:0;
+float:left;
+margin-right:10px;
+width:48px;
+}
+
+.start-right li a{
+text-decoration:none;
+font:bold 11px/32px tahoma;
+display:block;
+float:left;
+color:#fff;
+width:175px;
+}
+
+.start-left li a{
+text-decoration:none;
+font:12px/48px tahoma;
+display:block;
+float:left;
+color:#000;
+width:175px;
+}
+
+.start-options{
+clear:both;
+height:38px;
+padding:2px;
+}
+
+.start-options a{
+text-decoration:none;
+font:bold 11px/32px tahoma;
+display:block;
+float:right;
+color:#fff;
+padding:3px 6px;
+}
+
+.start-options a:hover{
+color:#000;
+background-color:#c5e7f6;
+}
+
+.start-options a img{
+border:0;
+float:left;
+margin-right:5px;
+}
+
+.start-right li:hover, .start-left li:hover{
+background-color:#c5e7f6;
+}
+
+.start-right li:hover a, .start-left li:hover a{
+color:#000;
+}
+
+.start-line{
+border-bottom:1px solid #02689d;
+}
+
+.start{
+background:url('../images/sbg.png');
+font:bold italic 18px/30px times new roman;
+color:#fff !important;
+text-decoration:none;
+text-shadow:0 0 3px #000;
+height:30px;
+padding:0 20px;
+display:block;
+text-align:center;
+border-right:1px solid #0e77b5;
+float:left;
+}
+
+.start.active{
+background:url('../images/sbg_alt.png');
+}
+
+.clock{
+color: #FFFFFF;
+float: right;
+font: bold 18px arial;
+padding: 4px 10px;
+border-left:1px solid #0e77b5;
+width:110px;
+text-align:center;
+}
+
+.start-pgm{
+position:fixed;
+bottom:80px;
+left:155px;
+background-color:#eee;
+border:1px solid gray;
+padding:0;
+box-shadow:2px 2px 6px gray;
+width:250px;
+display:none;
+}
+
+.start-pgm ul{
+display:none;
+position:absolute;
+background-color:#eee;
+border:1px solid gray;
+padding:0;
+box-shadow:2px 2px 2px gray;
+margin-left:248px;
+bottom:0;
+width:250px;
+margin-bottom:0;
+}
+
+.start-pgm li{
+position:relative;
+}
+
+.start-pgm li a{
+color:#000;
+width:95%;
+padding-left:5%;
+}
+
+.start-pgm li:hover ul, .start-pgm li:hover li:hover ul{
+display:block;
+}
+
+.start-pgm li:hover ul ul{
+display:none;
+}
+
+.start-bmk-init{
+text-decoration:none;
+font:bold 11px/32px tahoma;
+height:36px;
+display:block;
+padding:2px 0;
+text-indent:30px;
+background-image:url('../images/icons/right.png');
+background-position:75% center;
+background-repeat:no-repeat;
+color:#000;
+}
+
+.start-bmk-init:hover{
+background-color:#c5e7f6;
+}
+
+.start-back-bg{
+position:fixed;
+top:0;
+bottom:30px;
+left:0;
+right:0;
+display:none;
+}
+
+.sc-top .start-back-bg{
+top:30px;
+bottom:0;
+}
+
+/*  Only top  */
+.sc-top{
+top:0;
+left:0;
+right:0;
+bottom:auto;
+border-bottom:1px solid #003e75;
+box-shadow:0 0 3px #000;
+}
+
+.sc-top .start-menu{
+bottom:auto;
+top:30px;
+background-color:#003e83;
+background-image:none !important;
+}
+
+.sc-top .start-pgm{
+bottom:auto;
+top:385px;
+}
+
+/*  End only top  */
+
+.sc-taskbar h1, .sc-taskbar h2, .sc-taskbar h3, .sc-taskbar h4, .sc-taskbar h5, .sc-taskbar h6{
+clear:none;
+}
+
+.sc-taskbar hr{
+margin:0;
+padding:0;
+}
+
+.sc-sublist{
+background-position:center right;
+background-repeat:no-repeat;
+background-image:url("../images/sublist_gray.png");
+}
+
+.sc-sublist:hover{
+background-image:url("../images/sublist.png");
+}
+
+.startbar-find{
+float:left;
+border-left:1px solid #0E77B5;
+}
+
+.startbar-find input[type="text"]{
+padding:6px;
+border:1px solid #0E77B5;
+box-shadow:0 0 2px #000 inset;
+font:11px tahoma;
+border-radius:0px;
+margin-top:2px;
+margin-right:2px;
+margin-left:2px;
+width:160px;
+}
+
+.startbar-find input[type="submit"]{
+display:none;
+}
+
+.startbar-mini{
+margin:0;
+padding:0;
+float:right;
+display:block;
+}
+
+.startbar-mini li{
+list-style:none;
+display:inline-block;
+padding:2px 4px;
+margin:0;
+border-left:1px solid #0E77B5;
+text-align:center;
+}
+
+.startbar-mini li img{
+width:24px;
+height:24px;
+border:0;
+margin-top:2px;
+}
+
+/*--- Maroon Skin Start ----*/
+.sc-maroon{background-image:url("../images/maroon/bg.png");}
+.sc-maroon .start-menu{background-image:url("../images/maroon/top_bg.png");}
+.sc-maroon .start-menu, .sc-top.sc-maroon .start-menu, .sc-maroon .start-right{background-color:#862d07;}
+.sc-maroon  .startbar-find input[type="text"], .sc-maroon  .startbar-mini li, .sc-maroon .start-uimg, .sc-maroon  .start, .sc-maroon .clock, .sc-maroon .start-line, .sc-maroon  .start-left, .sc-maroon  .start-right, .sc-maroon .start-menu{border-color:#000;}
+.sc-maroon .start-options a:hover, .sc-maroon .start-uimg, .sc-maroon .start-right li:hover, .sc-maroon .start-left li:hover, .sc-maroon .start-bmk-init:hover{background-color:#ffaf75;}
+.sc-maroon .sc-sublist:hover{background-image:url("../images/maroon/sublist.png");}
+/*--- Maroon Skin Ends ----*/
+
+/*--- Red Skin Start ----*/
+.sc-red{background-image:url("../images/red/bg.png");}
+.sc-red .start-menu{background-image:url("../images/red/top_bg.png");}
+.sc-red .start-menu, .sc-top.sc-red .start-menu, .sc-red .start-right{background-color:#9a192b;}
+.sc-red  .startbar-find input[type="text"], .sc-red  .startbar-mini li, .sc-red .start-uimg, .sc-red  .start, .sc-red .clock, .sc-red .start-line, .sc-red  .start-left, .sc-red  .start-right, .sc-red .start-menu{border-color:#000;}
+.sc-red .start-options a:hover, .sc-red .start-uimg, .sc-red .start-right li:hover, .sc-red .start-left li:hover, .sc-red .start-bmk-init:hover{background-color:#ffcccc;}
+.sc-red .sc-sublist:hover{background-image:url("../images/red/sublist.png");}
+/*--- Red Skin Ends ----*/
+
+/*--- gold Skin Start ----*/
+.sc-gold{background-image:url("../images/gold/bg.png");}
+.sc-gold .start-menu{background-image:url("../images/gold/top_bg.png");}
+.sc-gold .start-menu, .sc-top.sc-gold .start-menu, .sc-gold .start-right{background-color:#463800;}
+.sc-gold  .startbar-find input[type="text"], .sc-gold  .startbar-mini li, .sc-gold .start-uimg, .sc-gold  .start, .sc-gold .clock, .sc-gold .start-line, .sc-gold  .start-left, .sc-gold  .start-right, .sc-gold .start-menu{border-color:#000;}
+.sc-gold .start-options a:hover, .sc-gold .start-uimg, .sc-gold .start-right li:hover, .sc-gold .start-left li:hover, .sc-gold .start-bmk-init:hover{background-color:#ffdb11;}
+.sc-gold .sc-sublist:hover{background-image:url("../images/gold/sublist.png");}
+/*--- gold Skin Ends ----*/
+
+/*--- silver Skin Start ----*/
+.sc-silver{background-image:url("../images/silver/bg.png");}
+.sc-silver .start-menu{background-image:url("../images/silver/top_bg.png");}
+.sc-silver .start-menu, .sc-top.sc-silver .start-menu, .sc-silver .start-right{background-color:#656565;}
+.sc-silver  .startbar-find input[type="text"], .sc-silver  .startbar-mini li, .sc-silver .start-uimg, .sc-silver  .start, .sc-silver .clock, .sc-silver .start-line, .sc-silver  .start-left, .sc-silver  .start-right, .sc-silver .start-menu{border-color:#000;}
+.sc-silver .start-options a:hover, .sc-silver .start-uimg, .sc-silver .start-right li:hover, .sc-silver .start-left li:hover, .sc-silver .start-bmk-init:hover{background-color:#d8d8d8;}
+.sc-silver .sc-sublist:hover{background-image:url("../images/silver/sublist.png");}
+/*--- silver Skin Ends ----*/
+
+/*--- green Skin Start ----*/
+.sc-green{background-image:url("../images/green/bg.png");}
+.sc-green .start-menu{background-image:url("../images/green/top_bg.png");}
+.sc-green .start-menu, .sc-top.sc-green .start-menu, .sc-green .start-right{background-color:#005200;}
+.sc-green  .startbar-find input[type="text"], .sc-green  .startbar-mini li, .sc-green .start-uimg, .sc-green  .start, .sc-green .clock, .sc-green .start-line, .sc-green  .start-left, .sc-green  .start-right, .sc-green .start-menu{border-color:#000;}
+.sc-green .start-options a:hover, .sc-green .start-uimg, .sc-green .start-right li:hover, .sc-green .start-left li:hover, .sc-green .start-bmk-init:hover{background-color:#c6ffbf;}
+.sc-green .sc-sublist:hover{background-image:url("../images/green/sublist.png");}
+/*--- green Skin Ends ----*/
+
+/*--- purple Skin Start ----*/
+.sc-purple{background-image:url("../images/purple/bg.png");}
+.sc-purple .start-menu{background-image:url("../images/purple/top_bg.png");}
+.sc-purple .start-menu, .sc-top.sc-purple .start-menu, .sc-purple .start-right{background-color:#572c86;}
+.sc-purple  .startbar-find input[type="text"], .sc-purple  .startbar-mini li, .sc-purple .start-uimg, .sc-purple  .start, .sc-purple .clock, .sc-purple .start-line, .sc-purple  .start-left, .sc-purple  .start-right, .sc-purple .start-menu{border-color:#000;}
+.sc-purple .start-options a:hover, .sc-purple .start-uimg, .sc-purple .start-right li:hover, .sc-purple .start-left li:hover, .sc-purple .start-bmk-init:hover{background-color:#f2d0fb;}
+.sc-purple .sc-sublist:hover{background-image:url("../images/purple/sublist.png");}
+/*--- purple Skin Ends ----*/
+
+/*--- pink Skin Start ----*/
+.sc-pink{background-image:url("../images/pink/bg.png");}
+.sc-pink .start-menu{background-image:url("../images/pink/top_bg.png");}
+.sc-pink .start-menu, .sc-top.sc-pink .start-menu, .sc-pink .start-right{background-color:#75005d;}
+.sc-pink  .startbar-find input[type="text"], .sc-pink  .startbar-mini li, .sc-pink .start-uimg, .sc-pink  .start, .sc-pink .clock, .sc-pink .start-line, .sc-pink  .start-left, .sc-pink  .start-right, .sc-pink .start-menu{border-color:#000;}
+.sc-pink .start-options a:hover, .sc-pink .start-uimg, .sc-pink .start-right li:hover, .sc-pink .start-left li:hover, .sc-pink .start-bmk-init:hover{background-color:#ffc4ff;}
+.sc-pink .sc-sublist:hover{background-image:url("../images/pink/sublist.png");}
+/*--- pink Skin Ends ----*/
+
+/* Button skins */
+.sc-red-btn .start{background-image:url("../images/red/sbg.png");}
+.sc-red-btn .start.active{background-image:url("../images/red/sbg_alt.png");}
+
+.sc-blue-btn .start{background-image:url("../images/blue/sbg.png");}
+.sc-blue-btn .start.active{background-image:url("../images/blue/sbg_alt.png");}
+
+.sc-maroon-btn .start{background-image:url("../images/maroon/sbg.png");}
+.sc-maroon-btn .start.active{background-image:url("../images/maroon/sbg_alt.png");}
+
+.sc-gold-btn .start{background-image:url("../images/gold/sbg.png");}
+.sc-gold-btn .start.active{background-image:url("../images/gold/sbg_alt.png");}
+
+.sc-silver-btn .start{background-image:url("../images/silver/sbg.png");}
+.sc-silver-btn .start.active{background-image:url("../images/silver/sbg_alt.png");}
+
+.sc-purple-btn .start{background-image:url("../images/purple/sbg.png");}
+.sc-purple-btn .start.active{background-image:url("../images/purple/sbg_alt.png");}
+
+.sc-pink-btn .start{background-image:url("../images/pink/sbg.png");}
+.sc-pink-btn .start.active{background-image:url("../images/pink/sbg_alt.png");}
+/* Button skins end */
+
+
+/* sc-demo panel */
+.sc-demo-panel{
+position:fixed;
+top:40px;
+right:40px;
+background:gold;
+border:1px solid #000;
+box-shadow:3px 3px 5px;
+padding:10px;
+width:300px;
+min-height:200px;
+z-index:9999999;
+}
+
+.sc-demo-panel h2{
+text-align:center;
+font:bold 20px verdana;
+}
+
+.sc-demo-panel li{
+padding:10px;
+list-style:none;
+}
